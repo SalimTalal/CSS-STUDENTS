@@ -1,0 +1,32 @@
+@media screen and (max-width:1160px){
+    .main-page {
+        height: 150vh;
+    } 
+}
+
+@media screen and (max-width:920px){
+    .main-page {
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:780px){
+    .main-page {
+        height: 250vh;
+    }
+}
+
+@media screen and (max-width:540px){
+    .main-page {
+        height: 300vh;
+        min-width: 320px;
+    } 
+}
+
+@media screen and (max-width: 320px) {
+    .main-page {
+        height: 350vh;
+    }
+}

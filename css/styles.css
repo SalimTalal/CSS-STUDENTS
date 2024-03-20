@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    background-color: #ecf2f8;
+    height: 100vh;
+}
+
+.main-page {
+    /* border: solid 2px black; */
+    width: 100%;
+    height: 100%;
+    padding: 1.5%;
+    margin: auto;
+    gap: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+
+.main-page .griditem {
+    border-radius: 0.5rem;
+    padding: 30px;
+    box-shadow: 0 0.5rem 0.25rem 0 rgba(0, 0, 0, 0.25);    
+}
+
+.student-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.student-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #cfcfcf;
+}
+
+.student-name {
+    font-size: 15px;
+    color: #e6e6e6;
+}
+
+.student-status {
+    opacity: 90%;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.student-review {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+    color: #b3b3b3;
+}
+
+.student-quote {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+    opacity: 70%;
+  }
+  
+.student-1 {    
+    background-color: #7541c8;
+    position: relative;
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 6;
+}
+
+.student-2 {
+    background-color: hsl(217, 19%, 35%);
+    grid-column: 7 / span 3;
+    grid-row: 1 / span 6;
+}
+
+.student-3 {
+    grid-column: 1 / span 3;
+    grid-row: 7 / span 6;
+}
+
+
+.student-4 {
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 4 / span 6;
+    grid-row: 7 / span 6;
+}
+
+.student-5 {
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 12;
+}
+
+.griditem:nth-of-type(3) .student-name, 
+.griditem:nth-of-type(5) .student-name {
+    color:black;
+}
+
+.griditem:nth-of-type(1) .student-quote, 
+.griditem:nth-of-type(2) .student-quote,
+.griditem:nth-of-type(4) .student-quote {
+    color:white;
+}
